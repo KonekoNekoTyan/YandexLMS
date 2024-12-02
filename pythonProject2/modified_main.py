@@ -10,6 +10,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Случайные окружности")
+        self.setGeometry(100, 100, 800, 600)
 
         # Виджет
         self.central_widget = QWidget()
@@ -18,6 +19,8 @@ class MainWindow(QMainWindow):
         # Кнопка
         self.draw_button = QPushButton("Нарисовать окружности")
         self.layout.addWidget(self.draw_button)
+        self.draw_button.setFixedSize(200, 50)
+        self.draw_button.move(700, 500)
 
         # Основное окно
         self.setCentralWidget(self.central_widget)
