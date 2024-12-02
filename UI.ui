@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>drawButton</string>
+     <string>Нарисовать окружности</string>
     </property>
    </widget>
   </widget>
